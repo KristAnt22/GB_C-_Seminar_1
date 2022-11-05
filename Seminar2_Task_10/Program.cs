@@ -11,16 +11,9 @@
         Console.WriteLine("Введедите трехзначное число");
         string inputString = Console.ReadLine();
         int num = int.Parse(inputString);
-        if (num > 99)
+        if ((num > 99) & (num < 1000))
         {
-            if(num < 1000)
-            {
-                Console.WriteLine($"вторая цифра введенного числа: {GetTwoDigit(num)}");
-            }
-            else 
-            {
-                Console.WriteLine("Ошибка! Введено не корректное значение.");
-            }
+            Console.WriteLine($"вторая цифра введенного числа: {GetTwoDigit(num)}");
         }
         else 
         {
